@@ -18,3 +18,13 @@ def flight_time_table(max_weight_grams, step_grams):
         flight_time = calculate_flight_time(weight)
         #AI orignially limited weight to <15
         print(f"{weight} | {flight_time:.2f}")
+
+#AI suggested code
+weightG = float(input("Enter the weight of the payload in grams: "))
+flight_timeG = calculate_flight_time(weightG)
+print(f"The flight time for a payload of {weightG} grams is {flight_timeG:.2f} seconds.")
+
+#AI suggested code
+maxWeight = int(input("Enter the maximum weight for the flight time table in grams: "))
+stepWeight = int(input("Enter the step weight for the flight time table in grams: "))
+flight_time_table(maxWeight, stepWeight)
